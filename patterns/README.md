@@ -214,6 +214,37 @@ A triangle outline with spaces inside.
 
 ---
 
+## 13. butterfly-pattern.js
+
+### What it prints
+A butterfly-shaped pattern made of stars with a centered gap between the two halves.
+
+### How it works
+- The first loop prints the upper half of the butterfly.
+- For each row, it prints stars on the left, spaces in the middle, and stars on the right.
+- The second loop prints the lower half in reverse order.
+- The number of spaces grows smaller as the row moves upward or downward, creating the butterfly shape.
+
+### Logic
+- In the first loop, the row number controls how many stars appear on each side.
+- The middle gap is created using `2 * (n - row)` spaces.
+- The second loop repeats the same idea in reverse so the bottom half mirrors the top half.
+
+### Example
+For `n = 4`, the pattern prints:
+
+```text
+*      *
+**    **
+***  ***
+********
+***  ***
+**    **
+*      *
+```
+
+---
+
 ## Running a file
 
 Use Node.js to run any pattern file:
